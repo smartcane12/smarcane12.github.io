@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Código QR</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+     <nav>
+        <div class="logo">
+            <h1>SMART CANE</h1>
+        </div>
+        <ul>
+            <li><a href="principal.html">Inicio</a></li>
+            <li><a href="acercadenosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="info.html">Más Información</a></li>
+          <li><a href="tra1.html">Genera tu Código QR</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Generador de Código QR</h1>
+        <form id="dataForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="refNumber">Número de referencia:</label>
+            <input type="text" id="refNumber" name="refNumber" required>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="zone">Direccion</label>
+            <input type="text" id="zone" name="zone" required>
+
+            <button type="button" id="generateBtn">Generar Código QR</button>
+        </form>
+        <div id="qrCode"></div>
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="modelo.js"></script>
+</body>
+</html>
